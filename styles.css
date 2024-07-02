@@ -59,6 +59,12 @@ h2 {
     text-indent: 25px;
 }
 
+h4 {
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
+    font-size: 1.8em;
+}
+
 .signature {
     font-family: 'Pinyon Script';
     font-size: 5em;
@@ -239,7 +245,7 @@ footer .footer-right {
     resize: vertical; /* Allow vertical resizing of textarea */
 }
 
-#contact button {
+#contact #sendEmailButton {
     font-family: 'Chivo Mono', monospace; /* Change button text font */
     background-color: var(--teal); /* Teal color */
     color: var(--indigo); /* Text color */
@@ -248,11 +254,12 @@ footer .footer-right {
     border-radius: 5px; /* Rounded corners */
     font-size: 1.2em; /* Button text size */
     cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline */
     display: block; /* Display as block element */
     margin: 0 auto; /* Center align button */
 }
 
-#contact button:hover {
+#contact #sendEmailButton:hover {
     background-color: var(--goldenrod); /* Hover color */
 }
 
