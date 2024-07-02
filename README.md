@@ -1,10 +1,10 @@
-# Alexandria Algiere Portfolio
+# Alex Algiere Portfolio
 
-Welcome to my GitHub repository! This repository serves as a showcase of my work in web design, development, and UX/UI.
+Welcome to my GitHub repository! This repository showcases my work in web design, development, and UX/UI.
 
 ## About
 
-I am Alexandria Algiere, a passionate web designer and developer with a focus on creating visually appealing and user-friendly websites. This portfolio contains my skills and experience in the field of web and UX/UI design.
+I am Alex Algiere, a passionate web designer and developer focusing on creating visually appealing and user-friendly websites. This portfolio contains my skills and experience in the field of web and UX/UI design.
 
 ## Education
 
