@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Pinyon+Script&display=swap');
+
+/* Root variables for colors */
+:root {
+    --indigo: #4b0082ff;
+    --lavender-web: #e6e6faff;
+    --teal: #008080ff;
+    --goldenrod: #daa520ff;
+    --charcoal: #36454fff;
+    --purple: #800080ff; /* Purple color */
+}
+
+/* For WebKit browsers (Chrome, Safari, and Opera) */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 0px; /* Width of the scrollbar */
+    height: 0px; /* Height of the scrollbar */
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Transparent thumb */
+    border-radius: 6px; /* Rounded thumb */
+    border: 3px solid transparent; /* Transparent border */
+}
+
+/* For Firefox */
+html, body {
+    scrollbar-width: none; /* Thin scrollbar */
+    scrollbar-color: transparent transparent; /* Transparent scrollbar */
+}
+
+/* For Internet Explorer and Edge */
+html {
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* Autohide scrollbar */
+}
+
+/* Base styles for the entire body */
+body {
+    font-family: 'Chivo Mono', monospace;
+    color: var(--charcoal);
+    background-color: var(--lavender-web);
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading styles */
+h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center; /* Center align the signature */
+    text-shadow: 2px 2px var(--goldenrod); /* Goldenrod drop shadow */
+    border: none; /* Remove any border */
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', serif;
+    text-indent: 25px;
+}
+
+.signature {
+    font-family: 'Pinyon Script';
+    font-size: 5em;
+    font-weight: bold; /* Make the text bolder */
+    color: #36454f; /* Charcoal color */
+    padding: 10px; /* Add padding for space around text */
+    text-shadow: 2px 2px 5px #daa520; /* Goldenrod text shadow */
+    display: block; /* Ensure it's treated as a block element */
+    margin: auto; /* Center horizontally */
+    text-align: center; /* Center text within the block */
+}
+
+/* Header styles */
+header {
+    background-image: url('https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: var(--lavender-web);
+    padding: 20px 0;
+    border-bottom: 2px solid var(--goldenrod);
+}
+
+/* Container for centering content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Main sections */
+main section {
+    padding: 40px 0;
+}
+
+#projects .project-list {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical overflow */
+    height: auto;
+    max-width: 100%; /* Limit maximum width */
+    border: 2px solid var(--goldenrod); /* Changed to goldenrod */
+    padding: 10px;
+    background-color: var(--lavender-web);
+    scroll-snap-type: x mandatory;
+    justify-content: center; /* Center items horizontally */
+    scrollbar-width: thin; /* Thin scrollbar for browsers that support it */
+    scrollbar-color: transparent transparent; /* Transparent scrollbar */
+}
+
+.project-item {
+    flex: 0 0 auto; /* Allow items to grow and shrink */
+    margin-right: 10px; /* Adjust margin between items */
+    scroll-snap-align: start;
+    text-align: center;
+    background-color: var(--teal);
+    color: var(--indigo);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.8s ease; /* Transition duration set to 0.8s */
+    width: 160px; /* Adjust width of each item */
+    max-width: 160px; /* Limit maximum width of each item */
+}
+
+.project-item:hover {
+    background-color: var(--goldenrod); /* Background color on hover */
+    color: var(--indigo); /* Ensure text color stays the same */
+}
+
+.project-item img {
+    width: 150px; /* Set the width to 150 pixels */
+    height: 150px; /* Set the height to 150 pixels */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    object-position: center; /* Center the image within the container */
+    border-radius: 50%; /* Optional: If you want rounded images */
+}
+
+.project-item h3 {
+    margin: 10px 0 5px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--indigo);
+    color: var(--lavender-web);
+    padding: 20px 0;
+    border-top: 2px solid var(--goldenrod);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+    gap: 10px; /* Reduce space between icons */
+}
+
+footer .social-links a {
+    color: var(--lavender-web);
+    text-decoration: none;
+    margin: 0 5px; /* Reduce space between icons */
+}
+
+footer .social-links img {
+    width: 40px; /* Adjust size of the icons */
+    height: 40px; /* Adjust size of the icons */
+}
+
+footer .footer-right {
+    margin-left: auto; /* Move to the right */
+    text-align: right; /* Align text to the right */
+    flex-basis: 100%; /* Ensure it takes full width on smaller screens */
+    margin-top: 10px; /* Add space between social links and copyright on smaller screens */
+}
+
+/* Education section */
+#education p {
+    margin-bottom: 10px;
+}
+
+/* Skills section */
+#skills ul {
+    columns: 2;
+    list-style-type: none;
+}
+
+#skills ul li::before {
+    content: '•';
+    color: var(--teal);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Contact section */
+#contact {
+    background-color: var(--lavender-web); /* Set overall background color */
+    padding: 20px 0; /* Add padding for space */
+    text-align: center; /* Center align contents */
+}
+
+#contact .container {
+    max-width: 600px; /* Limit container width */
+    margin: 0 auto; /* Center align container */
+}
+
+#contact form {
+    background-color: var(--charcoal); /* Charcoal background */
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left; /* Left align form contents */
+}
+
+#contact form .input-group {
+    margin-bottom: 20px; /* Add margin between input groups */
+}
+
+#contact form label {
+    display: block; /* Display labels as block for better alignment */
+    margin-bottom: 5px; /* Add space below labels */
+    color: var(--lavender-web); /* Label text color */
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+    margin-top: 5px; /* Add margin */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid var(--indigo); /* Border color */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+#contact form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+#contact button {
+    font-family: 'Chivo Mono', monospace; /* Change button text font */
+    background-color: var(--teal); /* Teal color */
+    color: var(--indigo); /* Text color */
+    padding: 10px 20px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: block; /* Display as block element */
+    margin: 0 auto; /* Center align button */
+}
+
+#contact button:hover {
+    background-color: var(--goldenrod); /* Hover color */
+}
+
+/* Additional styles */
+.icon-container {
+    width: 400px; /* Width of the container */
+    height: 400px; /* Height of the container */
+    margin: 20px auto 0; /* Center the container and add margin above */
+    border-radius: 50%; /* Rounded shape */
+    overflow: hidden; /* Hide overflow to make the image round */
+    background-color: var(--lavender-web); /* Background color */
+    border: 2px solid #000; /* Black border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
