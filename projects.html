@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Alexandria Algiere</title>
+    <title>Alexandria Algiere - Projects</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Pinyon+Script&display=swap" rel="stylesheet">
     <link rel="icon" href="data:,">
-</head>
+</head>    
 <body>
     <header>
         <div class="header-background">
@@ -16,64 +16,92 @@
             </div>
         </div>
     </header>
+    
+    <!-- Navigation Buttons -->
+    <nav class="navigation">
+        <div class="container">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="#index.html#contact" class="nav-button">Contact</a>
+        </div>
+    </nav>
+    
     <main>
-        <section id="landing-pages" class="project-category">
+        <section id="projects">
             <div class="container">
-                <h2>Landing Pages</h2>
-                <div class="project-list">
-                    <a href="project1.html" class="project-item" style="text-decoration: none;">
-                        <img src="https://via.placeholder.com/150" alt="Project 1">
-                        <h3>Project 1</h3>
-                        <p>Description of Project 1.</p>
-                    </a>
-                    <!-- Add more landing page projects here -->
-                </div>
+                <h1>Projects</h1>
+                
+                <!-- Landing Pages Section -->
+                <section id="landing-pages">
+                    <h2>Landing Pages</h2>
+                    <div class="project-list">
+                        <a href="index.html" target="_blank" class="project-item" style="text-decoration: none;">
+                            <img src="https://i.gyazo.com/7eeaa38c0be9ca4b02027f066f161947.gif" alt="Landing Page 1">
+                            <h3>My Portfolio</h3>
+                            <p>This portfolio website is designed to showcase my talents and skills, providing an overview of my capabilities.</p>
+                        </a>
+                        <a href="landing-page2.html" target="_blank" class="project-item" style="text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" alt="Landing Page 2">
+                            <h3>Landing Page 2</h3>
+                            <p>Description of Landing Page 2.</p>
+                        </a>
+                    </div>
+                </section>
+                
+                <!-- Small Projects Section -->
+                <section id="small-projects">
+                    <h2>Small Projects</h2>
+                    <div class="project-list">
+                        <a href="https://alliealgiere.github.io/To-Do-List/" target="_blank" class="project-item" style="text-decoration: none;">
+                            <img src="https://snipboard.io/xORFKJ.jpg" alt="To-Do List">
+                            <h3>To-Do List</h3>
+                            <p>A simple To-Do List app that allows users to add, mark as complete tasks with smooth transition effects.</p>
+                        </a>
+                        <a href="https://alliealgiere.github.io/memory-game/" target="_blank" class="project-item" style="text-decoration: none;">
+                            <img src="https://snipboard.io/ihlFR4.jpg" alt="Memory Game">
+                            <h3>Memory Game</h3>
+                            <p>The Memory Game is a classic card-matching game where players flip cards to find matching pairs.</p>
+                        </a>
+                    </div>
+                </section>
+                
+                <!-- Large Projects Section -->
+                <section id="large-projects">
+                    <h2>Large Projects</h2>
+                    <div class="project-list">
+                        <a href="https://github.com/AllieAlgiere/Final" target="_blank" class="project-item" style="text-decoration: none;">
+                            <img src="https://snipboard.io/ChXVzp.jpg" alt="Meal Planner">
+                            <h3>Build Your Own Meal Plan Generator</h3>
+                            <p>Create customized meal plans effortlessly with our Build Your Own Meal Plan Generator. Tailor meals to your preferences and nutritional needs in just a few clicks.</p>
+                        </a>
+                        <a href="https://www.figma.com/proto/I7Pr1vUWK9Y9H691GNcjzl/Main-Project?node-id=92-1458&t=jHpDFljD95miy3ro-1&scaling=scale-down&content-scaling=fixed&page-id=78%3A1166&starting-point-node-id=92%3A1458"  target="_blank" class="project-item" style="text-decoration: none; background-size: cover;">
+                            <img src="https://snipboard.io/DExXmR.jpg" alt="Urban Roots">
+                            <h3>Urban Roots</h3>
+                            <p>Urban Roots simplifies urban gardening through personalized advice, product recommendations, and community support, emphasizing accessibility and mobile-friendly usability for urban gardeners.</p>
+                        </a>
+                    </div>
+                </section>
+                
+                <!-- Web Applications Section -->
+                <section id="web-applications">
+                    <h2>Web Applications</h2>
+                    <div class="project-list">
+                        <a href="web-app1.html" target="_blank" class="project-item" style="text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" alt="Web Application 1">
+                            <h3>Web Application 1</h3>
+                            <p>Description of Web Application 1.</p>
+                        </a>
+                        <a href="web-app2.html" target="_blank" class="project-item" style="text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" alt="Web Application 2">
+                            <h3>Web Application 2</h3>
+                            <p>Description of Web Application 2.</p>
+                        </a>
+                    </div>
+                </section>
+                
             </div>
         </section>
-        
-        <section id="small-projects" class="project-category">
-            <div class="container">
-                <h2>Small Projects</h2>
-                <div class="project-list">
-                    <a href="https://alliealgiere.github.io/To-Do-List/" target="_blank" class="project-item" style="text-decoration: none;">
-                        <img src="https://snipboard.io/xORFKJ.jpg" alt="To-Do List">
-                        <h3>To-Do List</h3>
-                        <p>A simple To-Do List app that allows users to add, mark as complete tasks with smooth transition effects.</p>
-                    </a>
-                    <a href="https://alliealgiere.github.io/memory-game/" target="_blank" class="project-item" style="text-decoration: none;">
-                        <img src="https://snipboard.io/ihlFR4.jpg" alt="Memory Game">
-                        <h3>Memory Game</h3>
-                        <p>The Memory Game is a classic card-matching game where players flip cards to find matching pairs.</p>
-                    </a>
-                    <!-- Add more small projects here -->
-                </div>
-            </div>
-        </section>
-        
-        <section id="large-projects" class="project-category">
-            <div class="container">
-                <h2>Large Projects</h2>
-                <div class="project-list">
-                    <a href="https://github.com/AllieAlgiere/Final" target="_blank" class="project-item" style="text-decoration: none;">
-                        <img src="https://snipboard.io/ChXVzp.jpg" alt="Meal Planner">
-                        <h3>Build Your Own Meal Plan Generator</h3>
-                        <p>Create customized meal plans effortlessly with our Build Your Own Meal Plan Generator. Tailor meals to your preferences and nutritional needs in just a few clicks.</p>
-                    </a>
-                    <!-- Add more large projects here -->
-                </div>
-            </div>
-        </section>
-        
-        <!-- Add more sections for other categories as needed -->
-        
     </main>
     <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/analgiere" target="_blank">
                 <img src="In-White-128-Γäó@2x.png" alt="LinkedIn">
@@ -91,6 +119,6 @@
         <div class="footer-right">
             &copy; 2024 Alexandria Algiere
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>
