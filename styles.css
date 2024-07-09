@@ -59,6 +59,12 @@ h2 {
     text-indent: 25px;
 }
 
+h5 {
+    font-family: 'Chivo Mono', serif;
+    text-align: left;
+    font-size: 1.1em;
+}
+
 h4 {
     font-family: 'Cinzel Decorative', serif;
     text-align: center;
@@ -90,7 +96,7 @@ header {
 
 /* Container for centering content */
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
