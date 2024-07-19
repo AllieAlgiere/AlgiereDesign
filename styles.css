@@ -370,3 +370,10 @@ footer .footer-right {
     height: auto; /* Maintain aspect ratio */
     display: block;
 }
+
+iframe {
+    border: none; /* Remove the border */
+    margin: 0; /* Reset margin */
+    width: 100%; /* Set width to 100% of its container */
+    height: 750px; /* Set the desired height */
+}
