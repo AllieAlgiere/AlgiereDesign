@@ -181,7 +181,7 @@ main section {
 /* Image within project item */
 .project-item img {
     width: 100%; /* Full width of the project item */
-    height: 150px; /* Fixed height for image */
+    height: 450px; /* Fixed height for image */
     object-fit: contain;
     border-radius: 5px;
 }
